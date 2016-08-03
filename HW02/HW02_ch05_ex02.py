@@ -21,12 +21,21 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
+	if n == 2:
+		print("Fermat is correct")
+	elif a**n + b**n == c**n:
+		print("Holy smokes, Fermat was wrong!")
 
 
+def check_fermat_ints():
+	a = int(input("Value for a?"))
+	b = int(input("Value for b?"))
+	c = int(input("Value for c?"))
+	n = int(input("Value for d?"))
+	check_fermat(a,b,c,n)
 
-
-
-
+check_fermat_ints()
 
 
 # Write your functions above:

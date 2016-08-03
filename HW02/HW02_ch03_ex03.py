@@ -40,7 +40,28 @@
 # Write your functions below:
 # Body
 
+def do_twice(f):
+	f()
+	f()
 
+def do_four(f):
+	do_twice(f)
+	do_twice(f)
+
+def print_border():
+	print('+ - - - - + - - - - +')
+
+def print_inside():
+	print('|         |         |')
+
+def print_grid():
+	print_border()
+	do_four(print_inside)
+	print_border()
+	do_four(print_inside)
+	print_border()
+
+print_grid()
 
 
 

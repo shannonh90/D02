@@ -22,9 +22,31 @@
 ################################################################################
 # Write your functions below:
 # Body
+def is_triangle(a,b,c):
+    if a > (b+c):
+        print("No")
+    elif b > (a+c):
+        print("No")
+    elif c > (a+b):
+        print("No")
+    else:
+        print ("Yes")
+
+def is_triangle_ints():
+    a = int(input("Value for a?"))
+    b = int(input("Value for b?"))
+    c = int(input("Value for c?"))
+    is_triangle(a,b,c)
 
 
+is_triangle(1,2,3)
+is_triangle(1,2,4)
+is_triangle(1,5,3)
+is_triangle(6,2,3)
+is_triangle_ints()
 
+
+    
 
 
 

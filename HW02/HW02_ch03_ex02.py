@@ -29,9 +29,19 @@
 # Write your functions below:
 # Body
 
+def do_twice(f, v):
+	f(v)
+	f(v)
 
+def print_twice(s):
+	print(s)
+	print(s)
 
+do_twice(print_twice, "spam")
 
+def do_four(f, v):
+	print_twice(f, v)
+	print_twice(f, v)
 
 
 
@@ -43,6 +53,7 @@ def main():
     do_four(print_twice, [some_value])
     """
     print("Hello World!")
+    
     
 
 

@@ -15,6 +15,9 @@
 # Write your function below:
 # Body
 
+def right_justify(s):
+	offset = 70 - len(s)
+	print(" "* offset + s)
 
 
 
